@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html class="no-touch has-animation">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Match predictions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% if (htmlWebpackPlugin.options.isProduction) { %>
+      <meta name="fontsCSS" content="assets/powel-ui-webfonts.woff.css">
+    <% } else { %>
+      <meta name="fontsCSS" content="wwwroot/assets/powel-ui-webfonts.woff.css">
+    <% } %>
+    <script>(function(b,a){if(('ontouchstart'in b)||(b.DocumentTouch&&(a instanceof DocumentTouch))){a.documentElement.className=a.documentElement.className.replace(/\bno-touch\b/,'touch')}a.documentElement.className=a.documentElement.className.replace(/\bno-js\b/,'js')}(window,document));</script>
+    <script>!function(e){"use strict";function t(t,n,a){var o=navigator.userAgent,s=!e.addEventListener||o.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/)&&!o.match(/Chrome/);if(!s){var r={};try{r=localStorage||{}}catch(c){}var i="x-font-"+t,u=i+"url",f=i+"css",l=r[u],d=r[f],m=document.createElement("style");if(m.rel="stylesheet",document.head.appendChild(m),d&&l===n)m.textContent=d;else{var h=new XMLHttpRequest;h.open("GET",n),h.onload=function(){h.status>=200&&h.status<400&&(r[u]=n,r[f]=h.responseText,a||(m.textContent=h.responseText))},h.send()}}}function n(t){for(var n,a=e.document.getElementsByTagName("meta"),o=0;o<a.length;o++)if(a[o].name&&a[o].name==t){n=a[o];break}return n}var a=n("fontsCSS");t("OpenSans",a?a.content:"/Content/powel-ui-webfonts.woff.css")}(this);</script>
+    <% if (htmlWebpackPlugin.options.isProduction) { %>
+      <link rel="stylesheet" href="assets/pui.min.css">
+    <% } else { %>
+      <link rel="stylesheet" href="wwwroot/assets/pui.min.css">
+    <% } %>
+  </head>
+  <body class="fill-navy15">
+    <div id="root"></div>
+  </body>
+</html>

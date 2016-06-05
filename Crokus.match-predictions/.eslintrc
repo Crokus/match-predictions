@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "powel",
+    "powel/babel",
+    "powel/react"
+  ]
+}

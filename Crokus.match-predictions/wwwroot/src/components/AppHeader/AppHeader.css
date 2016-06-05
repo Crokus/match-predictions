@@ -1,0 +1,15 @@
+.appName {
+  position: relative;
+  transform: translateY(-2px);
+}
+.appName:before {
+  content: '';
+  position: absolute;
+  background-color: rgba(255, 255, 255, .8);
+  width: 1px;
+  height: 1.5rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
